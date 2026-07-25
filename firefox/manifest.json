@@ -6,7 +6,7 @@
   "description": "Automatically redirect Wikipedia to Grokipedia — the truth-seeking AI encyclopedia.",
   "browser_specific_settings": {
     "gecko": {
-      "id": "grokipedia-first@extension.local",
+      "id": "grokipedia-first@alexandre-roitman.github.io",
       "strict_min_version": "109.0"
     }
   },

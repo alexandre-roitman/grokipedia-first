@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grokipedia First — Privacy Policy</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Privacy Policy</h1>
+        <p class="tagline">Grokipedia First · Last updated: July 25, 2026</p>
+      </header>
+
+      <section class="card policy-body">
+        <p>
+          Grokipedia First is a browser extension that redirects Wikipedia articles to
+          Grokipedia when available. We designed it to be privacy-first: your browsing
+          history is not collected, sold, or transmitted to us.
+        </p>
+
+        <h2>What we access</h2>
+        <p>
+          To provide redirects, the extension needs permission to observe navigation on
+          Wikipedia and Grokipedia, and to check whether a Grokipedia page exists (via
+          a lightweight network request). The extension may also inject a popover on
+          Wikipedia when an article is missing on Grokipedia and you have not chosen
+          silent mode.
+        </p>
+
+        <h2>What we store</h2>
+        <ul>
+          <li>
+            <strong>Settings</strong> — Your preferences (redirect on/off, fallback mode,
+            language filter, never-ask-again list, etc.) are stored locally using your
+            browser’s extension storage. If browser sync is enabled, settings may sync
+            through your browser account.
+          </li>
+          <li>
+            <strong>Optional usage statistics</strong> — Only if you opt in. Simple
+            counters (e.g. redirect count) are stored locally on your device. They are
+            never sent to us or any third party.
+          </li>
+        </ul>
+
+        <h2>What we do not do</h2>
+        <ul>
+          <li>We do not log or store your browsing history.</li>
+          <li>We do not track which articles you read.</li>
+          <li>We do not use analytics, advertising, or third-party trackers.</li>
+          <li>We do not sell or share personal data.</li>
+        </ul>
+
+        <h2>Network requests</h2>
+        <p>
+          When you visit a Wikipedia article, the extension may send a
+          <code>HEAD</code> request to Grokipedia to check if a matching page exists.
+          That request goes directly to Grokipedia’s servers, not to us. Grokipedia’s
+          own privacy practices apply to those requests.
+        </p>
+
+        <h2>Third parties</h2>
+        <p>
+          This extension is not affiliated with Wikipedia, Wikimedia, xAI, or Grokipedia.
+          We do not control third-party websites you visit.
+        </p>
+
+        <h2>Children</h2>
+        <p>
+          The extension is not directed at children under 13, and we do not knowingly
+          collect personal information from children.
+        </p>
+
+        <h2>Changes</h2>
+        <p>
+          We may update this policy as the extension evolves. Material changes will be
+          reflected in the extension package and in the
+          <a href="https://github.com/alexandre-roitman/grokipedia-first/blob/main/PRIVACY.md">repository</a>.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          Questions or feedback:
+          <a href="https://github.com/alexandre-roitman/grokipedia-first/issues">open an issue on GitHub</a>.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <a href="options.html">Settings</a>
+        <span>·</span>
+        <a href="https://github.com/alexandre-roitman/grokipedia-first" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>·</span>
+        <a href="https://github.com/alexandre-roitman/grokipedia-first/issues" target="_blank" rel="noopener noreferrer">Feedback</a>
+      </footer>
+    </main>
+  </body>
+</html>

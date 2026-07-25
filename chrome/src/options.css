@@ -156,6 +156,46 @@ header h1 {
   font-size: 0.9rem;
 }
 
+.policy-body h2 {
+  margin: 24px 0 8px;
+  font-size: 1.05rem;
+}
+
+.policy-body h2:first-of-type {
+  margin-top: 0;
+}
+
+.policy-body p {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+.policy-body ul {
+  margin: 0 0 12px;
+  padding-left: 1.25rem;
+  color: var(--muted);
+}
+
+.policy-body li {
+  margin-bottom: 8px;
+}
+
+.policy-body a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.policy-body a:hover {
+  text-decoration: underline;
+}
+
+.policy-body code {
+  font-size: 0.9em;
+  background: var(--border);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f8fafc;

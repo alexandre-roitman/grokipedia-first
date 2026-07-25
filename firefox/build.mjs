@@ -47,6 +47,7 @@ await esbuild.build({
 });
 
 copyFileSync(join(srcDir, "options.html"), join(distDir, "options.html"));
+copyFileSync(join(srcDir, "privacy.html"), join(distDir, "privacy.html"));
 copyFileSync(join(srcDir, "options.css"), join(distDir, "options.css"));
 copyFileSync(join(srcDir, "content-popover.css"), join(distDir, "content-popover.css"));
 copyFileSync(join(__dirname, "manifest.json"), join(distDir, "manifest.json"));

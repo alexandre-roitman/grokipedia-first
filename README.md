@@ -87,15 +87,16 @@ The extension never redirects:
 
 ## Publishing
 
-Before publishing to Mozilla Add-ons, update `browser_specific_settings.gecko.id` in `firefox/manifest.json` with your official extension ID.
+Before publishing to Mozilla Add-ons, the extension ID is set to `grokipedia-first@alexandre-roitman.github.io` in `firefox/manifest.json`. Do not change this after your first AMO release.
 
-Update the GitHub and feedback links in `chrome/src/options.html` once the repository is created.
+Privacy policy for store listings: https://github.com/alexandre-roitman/grokipedia-first/blob/main/PRIVACY.md (also bundled as `privacy.html` in the extension).
 
 ## Privacy
 
 - No browsing history is collected or transmitted
 - Preferences use `storage.sync` (browser sync when enabled)
 - Optional usage statistics are stored locally only when opted in
+- Full policy: [PRIVACY.md](PRIVACY.md) or open **Privacy** from extension settings
 
 ## License
 
