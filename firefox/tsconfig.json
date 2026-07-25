@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "../chrome/src",
+    "noEmit": true,
+    "types": ["firefox-webext-browser"]
+  },
+  "include": ["../chrome/src/**/*"],
+  "references": [{ "path": "../shared" }]
+}

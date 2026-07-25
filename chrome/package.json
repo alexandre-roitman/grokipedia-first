@@ -1,0 +1,17 @@
+{
+  "name": "@grokipedia-first/chrome",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@grokipedia-first/shared": "*",
+    "webextension-polyfill": "^0.12.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
+  }
+}

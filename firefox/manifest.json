@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Grokipedia First",
+  "short_name": "Grokipedia First",
+  "version": "1.0.0",
+  "description": "Automatically redirect Wikipedia to Grokipedia — the truth-seeking AI encyclopedia.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "grokipedia-first@extension.local",
+      "strict_min_version": "109.0"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "webNavigation",
+    "storage",
+    "tabs",
+    "scripting",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "*://*.wikipedia.org/*",
+    "*://grokipedia.com/*",
+    "*://*.grokipedia.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Grokipedia First",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

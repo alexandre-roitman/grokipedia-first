@@ -1,0 +1,21 @@
+{
+  "name": "grokipedia-first",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Redirect Wikipedia to Grokipedia — Chrome + Firefox browser extension",
+  "workspaces": [
+    "shared",
+    "chrome",
+    "firefox"
+  ],
+  "scripts": {
+    "icons": "node scripts/generate-icons.mjs",
+    "build": "npm run icons && npm run build --workspaces --if-present",
+    "build:chrome": "npm run build -w chrome",
+    "build:firefox": "npm run build -w firefox",
+    "clean": "npm run clean --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

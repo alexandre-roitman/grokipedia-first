@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grokipedia First — Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Grokipedia First</h1>
+        <p class="tagline">Make Grokipedia your default encyclopedia.</p>
+      </header>
+
+      <section class="card">
+        <h2>Redirect</h2>
+
+        <label class="field">
+          <input type="checkbox" id="enabled" />
+          <span>Enable automatic Wikipedia → Grokipedia redirect</span>
+        </label>
+
+        <label class="field">
+          <input type="checkbox" id="englishOnly" />
+          <span>Only redirect English Wikipedia</span>
+        </label>
+
+        <label class="field">
+          <input type="checkbox" id="openInNewTab" />
+          <span>Open Grokipedia in a new tab instead of redirecting</span>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>When Grokipedia article is missing</h2>
+
+        <label class="field radio">
+          <input type="radio" name="fallbackMode" value="popover" />
+          <span>Show popover when article is missing on Grokipedia</span>
+        </label>
+
+        <label class="field radio">
+          <input type="radio" name="fallbackMode" value="silent" />
+          <span>Silently show Wikipedia if missing on Grokipedia</span>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Privacy</h2>
+
+        <label class="field">
+          <input type="checkbox" id="statsOptIn" />
+          <span>Opt in to local usage statistics (stored on your device only)</span>
+        </label>
+      </section>
+
+      <section class="card">
+        <h2>Never ask again</h2>
+        <p class="hint">Articles where you chose not to see the missing-article popover.</p>
+        <ul id="neverAskList" class="never-ask-list"></ul>
+      </section>
+
+      <section class="card actions">
+        <button type="button" id="saveBtn" class="btn primary">Save settings</button>
+        <button type="button" id="resetBtn" class="btn secondary">Reset all preferences</button>
+      </section>
+
+      <footer class="footer">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span>·</span>
+        <a href="https://grokipedia.com" target="_blank" rel="noopener noreferrer">Grokipedia</a>
+        <span>·</span>
+        <a href="mailto:feedback@grokipedia.com">Feedback</a>
+      </footer>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </main>
+    <script src="options.js" type="module"></script>
+  </body>
+</html>
